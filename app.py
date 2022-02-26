@@ -119,11 +119,10 @@ def getdata():
     #all_hist =
 
     x = mycollection.find({})
-    y = json.dumps(x)
-    return y;
+    #y = json.dumps(x)
+    #return y;
     for i in x:
-        #print(i)
+        print(i["url"])
         print(i["title"])
-
 
 getdata()
