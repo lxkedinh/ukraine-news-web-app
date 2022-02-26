@@ -12,6 +12,7 @@ const ArticleCardGrid = () => {
       <ArticleCard />
       <ArticleCard />
       <ArticleCard />
+      <ArticleCard />
     </StyledArticleCardGrid>
   );
 };

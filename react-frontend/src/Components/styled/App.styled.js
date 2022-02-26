@@ -6,4 +6,6 @@ export const StyledApp = styled.div`
   justify-content: flex-start;
   align-content: center;
   background-color: ${({ theme }) => theme.colors.background};
+  min-height: 100vh;
+  min-width: 100vw;
 `;

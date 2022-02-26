@@ -17,6 +17,8 @@ const theme = {
     websiteTitle: "#1B2A41",
     cardBackground: "#fff",
     cardTitle: "#0C1821",
+    cardLinkBackground: "#1B2A41",
+    loadButton: "#1B2A41",
   },
   fontSize: {
     largeCardTitle: "24px",

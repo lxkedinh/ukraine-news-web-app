@@ -8,6 +8,7 @@ import theme from "./styles/theme";
 import { StyledApp } from "./Components/styled/App.styled";
 import { WebsiteTitle } from "./Components/styled/WebsiteTitle.styled";
 import ArticleCardGrid from "./Components/ArticleCardGrid";
+import { LoadArticleButton } from "./Components/styled/LoadArticleButton.styled";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <StyledApp>
         <WebsiteTitle>Ukraine Invasion News Feed</WebsiteTitle>
         <ArticleCardGrid />
+        <LoadArticleButton>Load More</LoadArticleButton>
       </StyledApp>
     </ThemeProvider>
   );

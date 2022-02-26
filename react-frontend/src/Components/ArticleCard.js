@@ -16,6 +16,17 @@ const ArticleCard = () => {
           Russia Will Launch An All-Out Attack Tonight, Ukraine’s President Says
         </h2>
 
+        <p className='card-desc'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias et
+          nostrum accusantium. Impedit itaque velit sed optio neque minus
+          consectetur maxime ullam debitis, excepturi ratione ab consequatur
+          expedita temporibus ea.
+        </p>
+
+        <a className='card-link' href='/'>
+          READ MORE
+        </a>
+
         <p className='card-source'>New York Times</p>
       </div>
     </StyledArticleCard>
