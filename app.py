@@ -111,18 +111,32 @@ def browse():
 #@app.route(‘/refreshdata’)
 #def refreshdata():
     #return ’This page could be used to present plain text or a form for user input!’
-
 @app.route("/getdata")
 def getdata():
     mycollection = db["https://www.nytimes.com"]
-    print(db)
+    #print(db)
+    #print(mycollection)
     #all_hist =
 
-    x = mycollection.find({})
+    #x = mycollection.find({})
+    x = mycollection.find({}, {"title":1, "url":1, "publish_date":1,"summary":1,"_id": 0})
+    #print(x)
+    #print(type(x))
+    #for i in x:
+        #print(i)
+        #y = json.dumps(i)
+        #print(y)
     #y = json.dumps(x)
+    #response =json(parties)
+    #print(response)
     #return y;
-    for i in x:
-        print(i["url"])
-        print(i["title"])
+    for ind,i in enumerate(x):
+        i["id"]=ind
+        #print(type(i))
+        temp = json.dumps(i)
+        #print(i["url"])
+        #print(i["title"])
+        print(temp)
+    return temp;
 
 getdata()
